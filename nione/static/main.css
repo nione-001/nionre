@@ -1,0 +1,162 @@
+.box{
+    background-color:   #0d0730;
+    border-radius: 13px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+h1{
+    text-align: center;
+    color: #46B5D1;
+}
+
+.pic{
+    width: 75px;
+    height: 75px;
+}
+
+.topright{
+    display: flex;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.txt{
+    margin-left: 500px;
+}
+.inner{
+    background-color:   #46B5D1 ;
+    padding: 20px;
+    border-radius: 13px;
+    text-align: center;
+    padding: 50px 50px;
+    height: 75vh;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: flex;
+}
+
+#googleMap{
+    width: 300px;
+    height: 300px;
+}
+.leftmain{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rightmain{
+display: flex;
+flex-direction: column;
+border: #0d0730 3px solid;
+padding: 10px;
+border-radius: 10px;
+
+
+}
+
+#chk{
+    visibility: visible ;
+}
+
+.mainrb{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+li{
+    display: inline-block;
+}
+
+.in{
+    display: inline-block;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+#opt{
+    width: 75x;
+    height: 75px;
+    margin-left: 10px;
+    
+}
+.search{
+    width: 200px
+}
+
+.htlname{
+    text-align: left;
+}
+
+.butt{
+    border: 2px solid black;
+    padding: 2px 1px;
+    border-radius: 5px;
+    background-color: rgba(214, 175, 75, 0.843);
+}
+.butt:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.mainrb{
+    margin-top: 4px;
+    background-color: rgb(165, 206, 206);
+    height: 20vh;
+}
+
+#cartlist > h1{
+    color: black;
+}
+
+.boxmain{
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+
+.alignl{
+    text-align: left;
+    margin-left: 20px;
+ 
+}
+
+.clm{
+    justify-content: space-around;
+    display: flex;
+    margin: 0px ;
+    height: 20px;
+
+
+}
+
+.noline{
+    margin: 0px ;
+}
+
+.cartbtn{
+    margin-top: 35px;
+}
+
+.cartbtn:hover{
+    background-color: green;
+}
+
+.htlclr{
+    border-radius: 10px;
+    background-color: rgb(46, 93, 158);
+    padding: 12px;
+}

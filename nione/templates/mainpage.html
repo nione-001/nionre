@@ -1,0 +1,127 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'main.css'%}">
+</head>
+<body>
+    
+    <div class="Total">
+        <div class="box">
+            <div class="flex">
+                <img class="pic" id="opt" src="{% static 'hel2.jpeg'%}">
+                <h1 class="txt">NIONE</h1>
+             </div>
+            
+            <div class="topright">    
+                <div><img class="pic" src="{% static 'hel1.jpeg'%}"></div>
+                <div><img class="pic" src="{% static 'hel1.jpeg'%}"></div>
+                <div><img class="pic" src="{% static 'hel1.jpeg'%}"></div>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="leftmain">
+                <div >
+                    <div class="htlclr">
+                        <h2 class="htlname">SARAVANA BHAVAN</h2><br>
+                        <div class="row">
+                            <div class="pname">Dosa</div>
+                            <div class="pcost">Price</div>
+                            <div class="butt">Add</div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="pname">Idli</div>
+                            <div class="pcost">Price</div>
+                            <div class="butt">Add</div>
+                        </div>
+                        <br>
+                    </div>  
+                    <br>
+                    <div class="htlclr">
+                        <h2 class="htlname">A2D</h2><br>
+                        <div class="row">
+                            <div class="pname">Dosa</div>
+                            <div class="pcost">Price</div>
+                            <div class="butt">Add</div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="pname">Idli</div>
+                            <div class="pcost">Price</div>
+                            <div class="butt">Add</div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>  
+            <div class="rightmain">
+                    <div  class="right_tp">   
+                        <div>
+                            <h2>DELIVERY</h2>
+                        </div>
+                        <div>
+                            <input class="search" type="text" id="setuserlocation"><br><br>
+                        </div>
+                        
+                        <div>
+                            <div id="googleMap"></div>
+                        </div>
+                    </div> 
+                    <div class="mainrb">
+                        <div id="cartlist">
+                            <div><h3 class="noline">CART</h3></div>
+                            <div class="cartadd">
+                              <div class="clm">
+                                <div><h4 class="alignl">dosa</h4></div>
+                                <div><h4>cost</h4></div>
+                            </div>
+                            <div class="clm">
+                                <div><h4 class="alignl">idli</h4></div>
+                                <div><h4>cost</h4></div>
+                            </div>
+                            <div class="clm">
+                                <div><h4 class="alignl">poori</h4></div>
+                                <div><h4>cost</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><button class="cartbtn">Place Order</button></div>
+                </div>       
+            
+        </div>
+    </div>    
+
+</body>
+<script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB07xE8uI_g3p1XxUZMubVWT52c0Pxucrk&callback=myMap&&libraries=places"></script>
+  <script>
+  
+    const autocomplete = new google.maps.places.Autocomplete(document.getElementById("setuserlocation"));
+    
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".butt").click(function(e){
+      var pname = $(this).parent().children(".pname");
+      var pcost = $(this).parent().children(".pcost");
+      $("#cartlist").append("<div class='pricediv'>"+pname +" "+ pcost+"</div>")
+    })  
+  });
+  
+</script>
+</html>
